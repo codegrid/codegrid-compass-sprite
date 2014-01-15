@@ -1,0 +1,9 @@
+$icon-sprite-dimensions: true;
+
+@import "icon/*.png";
+@include all-icon-sprites;
+
+span {
+  display:inline-block;
+  border:3px solid #000;
+}

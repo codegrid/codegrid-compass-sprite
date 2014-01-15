@@ -1,0 +1,26 @@
+.myicon, .icon-face-cool, .icon-face-sad, .icon-face-wink {
+  background: url('../images/icon-s8f80a2636f.png') no-repeat;
+}
+
+.icon-face-cool {
+  background-position: 0 -148px;
+  height: 48px;
+  width: 48px;
+}
+
+.icon-face-sad {
+  background-position: 0 -216px;
+  height: 48px;
+  width: 48px;
+}
+
+.icon-face-wink {
+  background-position: 0 0;
+  height: 128px;
+  width: 128px;
+}
+
+span {
+  display: inline-block;
+  border: 3px solid #000;
+}

@@ -1,0 +1,20 @@
+.button-sprite, a {
+  background: url('../images/button-s42f973137b.png') no-repeat;
+}
+
+a {
+  display: block;
+  border: 3px solid #6EA56E;
+  background-position: 0 -80px;
+  height: 40px;
+  width: 150px;
+}
+a:hover, a.pushme_hover, a.pushme-hover {
+  background-position: 0 -160px;
+}
+a:target, a.pushme_target, a.pushme-target {
+  background-position: 0 -40px;
+}
+a:active, a.pushme_active, a.pushme-active {
+  background-position: 0 0;
+}

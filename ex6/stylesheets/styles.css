@@ -1,0 +1,62 @@
+.icon-sprite, .icon-battery, .icon-blockdevice, .icon-camera, .icon-chardevice, .icon-cpu-fan, .icon-cpu, .icon-face-cool, .icon-face-sad, .icon-face-wink {
+  background: url('../images/icon-scc7637241c.png') no-repeat;
+}
+
+.icon-battery {
+  background-position: 0 -96px;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-blockdevice {
+  background-position: 0 -48px;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-camera {
+  background-position: -32px -48px;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-chardevice {
+  background-position: -32px -96px;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-cpu-fan {
+  background-position: -32px 0;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-cpu {
+  background-position: 0 0;
+  height: 32px;
+  width: 32px;
+}
+
+.icon-face-cool {
+  background-position: -64px 0;
+  height: 48px;
+  width: 48px;
+}
+
+.icon-face-sad {
+  background-position: -64px -48px;
+  height: 48px;
+  width: 48px;
+}
+
+.icon-face-wink {
+  background-position: 0 -128px;
+  height: 128px;
+  width: 128px;
+}
+
+span {
+  display: inline-block;
+  border: 3px solid #000;
+}

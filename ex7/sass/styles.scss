@@ -1,0 +1,8 @@
+$button-sprite-dimensions: true;
+@import "button/*.png";
+
+a {
+  display:block;
+  border:3px solid #6EA56E;
+  @include button-sprite(pushme);
+}
