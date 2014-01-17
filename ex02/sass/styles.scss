@@ -1,7 +1,7 @@
 @import "icon/audio/*.png";
 @import "icon/face/*.png";
-@include all-face-sprites;
 @include all-audio-sprites;
+@include all-face-sprites;
 
 .face-cool { width:48px; height:48px; }
 .face-sad { width:48px; height:48px; }
