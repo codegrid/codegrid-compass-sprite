@@ -6,18 +6,6 @@
   background: url('../images/icon/face-s820149b219.png') no-repeat;
 }
 
-.face-cool {
-  background-position: 0 -128px;
-}
-
-.face-sad {
-  background-position: 0 -176px;
-}
-
-.face-wink {
-  background-position: 0 0;
-}
-
 .audio-headset {
   background-position: 0 0;
 }
@@ -28,6 +16,18 @@
 
 .audio-speaker {
   background-position: 0 -256px;
+}
+
+.face-cool {
+  background-position: 0 -128px;
+}
+
+.face-sad {
+  background-position: 0 -176px;
+}
+
+.face-wink {
+  background-position: 0 0;
 }
 
 .face-cool {
