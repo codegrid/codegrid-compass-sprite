@@ -1,0 +1,19 @@
+@import "icon/audio/*.png";
+@import "icon/face/*.png";
+@include all-face-sprites;
+@include all-audio-sprites;
+
+.face-cool { width:48px; height:48px; }
+.face-sad { width:48px; height:48px; }
+.face-wink { width:128px; height:128px; }
+.audio-headset { width:128px; height:128px; }
+.audio-keyboard { width:128px; height:128px; }
+.audio-speaker { width:32px; height:32px; }
+
+// デバッグ用
+
+span {
+  display:inline-block;
+  border:3px solid #000;
+}
+

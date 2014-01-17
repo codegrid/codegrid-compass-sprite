@@ -1,0 +1,35 @@
+.icon-sprite, .icon-face-cool, .icon-face-sad, .icon-face-wink {
+  background: url('../images/icon-s51e5ca4f42.png') no-repeat;
+}
+
+.icon-face-cool {
+  background-position: 0 -128px;
+}
+
+.icon-face-sad {
+  background-position: 0 -176px;
+}
+
+.icon-face-wink {
+  background-position: 0 0;
+}
+
+.icon-face-cool {
+  width: 48px;
+  height: 48px;
+}
+
+.icon-face-sad {
+  width: 48px;
+  height: 48px;
+}
+
+.icon-face-wink {
+  width: 128px;
+  height: 128px;
+}
+
+span {
+  display: inline-block;
+  border: 3px solid #000;
+}

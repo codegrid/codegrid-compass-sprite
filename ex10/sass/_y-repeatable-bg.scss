@@ -1,0 +1,71 @@
+//==========================================
+// スプライトマップ
+
+$y-repeatable-bg-x1: sprite-map("y-repeatable-bg/x1/*.png", $layout: horizontal);
+$y-repeatable-bg-x2: sprite-map("y-repeatable-bg/x2/*.png", $layout: horizontal);
+
+//==========================================
+// 背景画像ベースのクラス
+
+// 非Retina
+%dpr-x1-y-repeatable-bg-base {
+  background-image: sprite-url($y-repeatable-bg-x1);
+  background-repeat: repeat-y;
+}
+// Retina
+%dpr-x2-y-repeatable-bg-base {
+  background-image: sprite-url($y-repeatable-bg-x2);
+  background-size: image-width(sprite-path($y-repeatable-bg-x2)) / 2;
+  background-repeat: repeat-y;
+}
+
+//==========================================
+// スプライトの内容を出し分けるmixin
+
+@mixin y-repeatable-bg($name, $device-pixel-ratio) {
+
+  // 非Retina
+  @if $device-pixel-ratio == 1 {
+
+    // スプライトの位置を取得して指定
+    $position: sprite-position($y-repeatable-bg-x1, $name);
+    background-position: $position;
+
+  }
+
+  // Retina
+  @if $device-pixel-ratio == 2 {
+
+    // スプライトの位置を取得して指定
+    // background-sizeで本来のサイズの1/2に縮めているので
+    // X, Yもそれぞれ半分にする
+    $position: sprite-position($y-repeatable-bg-x2, $name);
+    $x: nth($position, 1) / 2;
+    $y: nth($position, 2) / 2;
+    background-position: $x $y;
+
+  }
+
+}
+
+//==========================================
+// Retina、非Retinaのセレクタを出力するmixin
+
+@mixin dpr-based-y-repeatable-bg($name) {
+  .dpr-x1 & {
+    @extend %dpr-x1-y-repeatable-bg-base;
+    @include y-repeatable-bg($name, 1);
+  }
+  .dpr-x2 & {
+    @extend %dpr-x2-y-repeatable-bg-base;
+    @include y-repeatable-bg($name, 2);
+  }
+}
+
+//==========================================
+// HTMLで直接利用するセレクタ
+
+.y-gradient-orange { @include dpr-based-y-repeatable-bg(orange); }
+.y-gradient-beige { @include dpr-based-y-repeatable-bg(beige); }
+.y-gradient-green { @include dpr-based-y-repeatable-bg(green); }
+

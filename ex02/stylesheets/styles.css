@@ -1,0 +1,66 @@
+.audio-sprite, .audio-headset, .audio-keyboard, .audio-speaker {
+  background: url('../images/icon/audio-sf2be771957.png') no-repeat;
+}
+
+.face-sprite, .face-cool, .face-sad, .face-wink {
+  background: url('../images/icon/face-s820149b219.png') no-repeat;
+}
+
+.face-cool {
+  background-position: 0 -128px;
+}
+
+.face-sad {
+  background-position: 0 -176px;
+}
+
+.face-wink {
+  background-position: 0 0;
+}
+
+.audio-headset {
+  background-position: 0 0;
+}
+
+.audio-keyboard {
+  background-position: 0 -128px;
+}
+
+.audio-speaker {
+  background-position: 0 -256px;
+}
+
+.face-cool {
+  width: 48px;
+  height: 48px;
+}
+
+.face-sad {
+  width: 48px;
+  height: 48px;
+}
+
+.face-wink {
+  width: 128px;
+  height: 128px;
+}
+
+.audio-headset {
+  width: 128px;
+  height: 128px;
+}
+
+.audio-keyboard {
+  width: 128px;
+  height: 128px;
+}
+
+.audio-speaker {
+  width: 32px;
+  height: 32px;
+}
+
+span {
+  display: inline-block;
+  border: 3px solid #000;
+}

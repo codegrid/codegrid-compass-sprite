@@ -1,0 +1,24 @@
+.icon-sprite, .faces .cool, .faces .sad, .faces .wink {
+  background: url('../images/icon-s51e5ca4f42.png') no-repeat;
+}
+
+.faces .cool {
+  background-position: 0 -128px;
+  width: 48px;
+  height: 48px;
+}
+.faces .sad {
+  background-position: 0 -176px;
+  width: 48px;
+  height: 48px;
+}
+.faces .wink {
+  background-position: 0 0;
+  width: 128px;
+  height: 128px;
+}
+
+span {
+  display: inline-block;
+  border: 3px solid black;
+}

@@ -1,0 +1,28 @@
+$icon: sprite-map("icon/*.png", $layout: smart);
+
+.icon-face-cool {
+  // spriteのURLを取得
+  background-image: sprite-url($icon);
+  // spriteの中から、face-coolのpositionを取得
+  background-position: sprite-position($icon, face-cool);
+  // face-coolのspriteの幅を取得
+  width: image-width(sprite-file($icon, face-cool));
+  // face-coolのspriteの高さを取得
+  height: image-height(sprite-file($icon, face-cool));
+}
+
+.icon-face-wink {
+  // face-winkの情報をまとめて取得
+  background: sprite($icon, face-wink);
+  // face-winkのspriteの幅を取得
+  width: image-width(sprite-file($icon, face-wink));
+  // face-winkのspriteの高さを取得
+  height: image-height(sprite-file($icon, face-wink));
+}
+
+// デバッグ用
+span {
+  display:inline-block;
+  border:3px solid black;
+}
+

@@ -1,0 +1,14 @@
+@import "icon/*.png";
+@include all-icon-sprites;
+
+.icon-face-cool { width:48px; height:48px; }
+.icon-face-sad { width:48px; height:48px; }
+.icon-face-wink { width:128px; height:128px; }
+
+// デバッグ用
+
+span {
+  display:inline-block;
+  border:3px solid #000;
+}
+

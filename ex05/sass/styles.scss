@@ -1,0 +1,24 @@
+// widthとheightも出力するか
+$icon-sprite-dimensions: true;
+
+// 画像間の隙間
+$icon-spacing: 20px;
+
+// X軸方向に繰り返すか
+$icon-repeat: repeat-x;
+
+// スプライトのベースクラス
+$icon-sprite-base-class: '.myicon';
+
+// 新しくスプライトが作られた時に古いものを削除するか
+$icon-clean-up: true;
+
+// スプライトの処理
+@import "icon/*.png";
+@include all-icon-sprites;
+
+// デバッグ用
+span {
+  display:inline-block;
+  border:3px solid #000;
+}
