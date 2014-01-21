@@ -1,0 +1,28 @@
+.bullet-sprite, li.nav1, li.nav2, li.nav3 {
+  background: url('../images/bullet-s670cdc2d10.png') no-repeat;
+}
+
+body {
+  padding: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 .7em 15px;
+}
+li.nav1 {
+  background-position: 0 -54px;
+}
+li.nav2 {
+  background-position: -30px -24px;
+}
+li.nav3 {
+  background-position: -60px 6px;
+}

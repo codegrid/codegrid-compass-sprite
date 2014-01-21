@@ -1,0 +1,27 @@
+$bullet-layout: diagonal;
+@import "bullet/*.png";
+
+body {
+  padding:20px;
+}
+
+ul {
+  padding:0;
+  margin:0 auto;
+  max-width:600px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 .7em 15px;
+  &.nav1 {
+    @include bullet-sprite(arrow1, $offset-y: 6px);
+  }
+  &.nav2 {
+    @include bullet-sprite(arrow2, $offset-y: 6px);
+  }
+  &.nav3 {
+    @include bullet-sprite(arrow3, $offset-y: 6px);
+  }
+}
