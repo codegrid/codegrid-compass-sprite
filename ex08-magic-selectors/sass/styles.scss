@@ -2,7 +2,14 @@ $button-sprite-dimensions: true;
 @import "button/*.png";
 
 a {
-  display:block;
-  border:3px solid #6EA56E;
+  display: block;
+  margin:0 0 10px;
+  border: 3px solid #6EA56E;
   @include button-sprite(pushme);
+  &.disabled {
+    cursor: default;
+    border-color: #A9CF9C;
+    @include button-sprite(pushme_disabled);
+    pointer-events: none;
+  }
 }

@@ -1,9 +1,10 @@
-.button-sprite, a {
+.button-sprite, a, a.disabled {
   background: url('../images/button-s42f973137b.png') no-repeat;
 }
 
 a {
   display: block;
+  margin: 0 0 10px;
   border: 3px solid #6EA56E;
   background-position: 0 -80px;
   height: 40px;
@@ -17,4 +18,12 @@ a:target, a.pushme_target, a.pushme-target {
 }
 a:active, a.pushme_active, a.pushme-active {
   background-position: 0 0;
+}
+a.disabled {
+  cursor: default;
+  border-color: #A9CF9C;
+  background-position: 0 -120px;
+  height: 40px;
+  width: 150px;
+  pointer-events: none;
 }
