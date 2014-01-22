@@ -1,8 +1,3 @@
-span {
-  display: inline-block;
-  border: 3px solid black;
-}
-
 .icon-face-cool {
   background-image: url('../images/icon-s30e3380ed7.png');
   background-position: 0 0;
@@ -14,4 +9,9 @@ span {
   background: url('../images/icon-s30e3380ed7.png') 0 -48px;
   width: 128px;
   height: 128px;
+}
+
+span {
+  display: inline-block;
+  border: 3px solid black;
 }
