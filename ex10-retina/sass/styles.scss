@@ -1,5 +1,15 @@
 @import 'icon';
 
+// アイコンら
+
+.icon-face-sad { @include icon(face-sad); }
+.icon-face-smile { @include icon(face-smile); }
+.icon-flag-ad { @include icon(flag-ad); }
+.icon-flag-ae { @include icon(flag-ae); }
+.icon-flag-af { @include icon(flag-af); }
+.icon-flag-ag { @include icon(flag-ag); }
+.icon-flag-ai { @include icon(flag-ai); }
+
 // デバッグ用
 
 span {

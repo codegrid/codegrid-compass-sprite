@@ -1,0 +1,44 @@
+.dpr-x1 li.nav1, .dpr-x1 li.nav2, .dpr-x1 li.nav3 {
+  background-image: url('../images/diagonal-bg/x1-s064d532909.png');
+  background-repeat: no-repeat;
+}
+
+.dpr-x2 li.nav1, .dpr-x2 li.nav2, .dpr-x2 li.nav3 {
+  background-image: url('../images/diagonal-bg/x2-sc5ee47c6f6.png');
+  background-size: 90px;
+  background-repeat: no-repeat;
+}
+
+body {
+  padding: 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 .7em 15px;
+}
+.dpr-x1 li.nav1 {
+  background-position: 0 -52px;
+}
+.dpr-x2 li.nav1 {
+  background-position: 0 -52px;
+}
+.dpr-x1 li.nav2 {
+  background-position: -30px -22px;
+}
+.dpr-x2 li.nav2 {
+  background-position: -30px -22px;
+}
+.dpr-x1 li.nav3 {
+  background-position: -60px 8px;
+}
+.dpr-x2 li.nav3 {
+  background-position: -60px 8px;
+}

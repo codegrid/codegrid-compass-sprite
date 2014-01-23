@@ -1,5 +1,17 @@
-@import 'x-repeatable-bg';
-@import 'y-repeatable-bg';
+@import 'repeat-x-bg';
+@import 'repeat-y-bg';
+
+// X方向リピート
+
+.x-gradient-orange { @include repeat-x-bg(orange); }
+.x-gradient-beige { @include repeat-x-bg(beige); }
+.x-gradient-green { @include repeat-x-bg(green); }
+
+// Y方向リピート
+
+.y-gradient-orange { @include repeat-y-bg(orange); }
+.y-gradient-beige { @include repeat-y-bg(beige); }
+.y-gradient-green { @include repeat-y-bg(green); }
 
 // デバッグ用
 

@@ -1,0 +1,26 @@
+@import 'diagonal-bg';
+
+body {
+  padding:20px;
+}
+
+ul {
+  padding:0;
+  margin:0 auto;
+  max-width:600px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 .7em 15px;
+  &.nav1 {
+    @include diagonal-bg(arrow1, $offset-y: 8px);
+  }
+  &.nav2 {
+    @include diagonal-bg(arrow2, $offset-y: 8px);
+  }
+  &.nav3 {
+    @include diagonal-bg(arrow3, $offset-y: 8px);
+  }
+}

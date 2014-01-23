@@ -1,51 +1,51 @@
 .dpr-x1 .x-gradient-orange, .dpr-x1 .x-gradient-beige, .dpr-x1 .x-gradient-green {
-  background-image: url('../images/x-repeatable-bg/x1-s27ff187fde.png');
+  background-image: url('../images/repeat-x-bg/x1-s354ceb6703.png');
   background-repeat: repeat-x;
 }
 
 .dpr-x2 .x-gradient-orange, .dpr-x2 .x-gradient-beige, .dpr-x2 .x-gradient-green {
-  background-image: url('../images/x-repeatable-bg/x2-s80d48c8702.png');
+  background-image: url('../images/repeat-x-bg/x2-sd2f949d02a.png');
   background-size: 25px;
   background-repeat: repeat-x;
+}
+
+.dpr-x1 .y-gradient-orange, .dpr-x1 .y-gradient-beige, .dpr-x1 .y-gradient-green {
+  background-image: url('../images/repeat-y-bg/x1-sedaa7ef7b8.png');
+  background-repeat: repeat-y;
+}
+
+.dpr-x2 .y-gradient-orange, .dpr-x2 .y-gradient-beige, .dpr-x2 .y-gradient-green {
+  background-image: url('../images/repeat-y-bg/x2-s75e01c8a12.png');
+  background-size: 477px;
+  background-repeat: repeat-y;
 }
 
 .dpr-x1 .x-gradient-orange {
   background-position: 0 -159px;
 }
 .dpr-x2 .x-gradient-orange {
-  background-position: 0 -318px;
+  background-position: 0 0;
 }
 
 .dpr-x1 .x-gradient-beige {
-  background-position: 0 0;
+  background-position: 0 -318px;
 }
 .dpr-x2 .x-gradient-beige {
-  background-position: 0 0;
+  background-position: 0 -318px;
 }
 
 .dpr-x1 .x-gradient-green {
-  background-position: 0 -318px;
+  background-position: 0 0;
 }
 .dpr-x2 .x-gradient-green {
   background-position: 0 -159px;
-}
-
-.dpr-x1 .y-gradient-orange, .dpr-x1 .y-gradient-beige, .dpr-x1 .y-gradient-green {
-  background-image: url('../images/y-repeatable-bg/x1-sa9a0be6484.png');
-  background-repeat: repeat-y;
-}
-
-.dpr-x2 .y-gradient-orange, .dpr-x2 .y-gradient-beige, .dpr-x2 .y-gradient-green {
-  background-image: url('../images/y-repeatable-bg/x2-sb41ecd3f02.png');
-  background-size: 477px;
-  background-repeat: repeat-y;
 }
 
 .dpr-x1 .y-gradient-orange {
   background-position: -318px 0;
 }
 .dpr-x2 .y-gradient-orange {
-  background-position: -318px 0;
+  background-position: -636px 0;
 }
 
 .dpr-x1 .y-gradient-beige {
@@ -59,7 +59,7 @@
   background-position: -159px 0;
 }
 .dpr-x2 .y-gradient-green {
-  background-position: -159px 0;
+  background-position: -318px 0;
 }
 
 .box {

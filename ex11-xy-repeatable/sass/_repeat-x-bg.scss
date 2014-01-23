@@ -1,0 +1,63 @@
+//==========================================
+// スプライトマップ群
+
+$repeat-x-bg-x1: sprite-map("repeat-x-bg/x1/*.png", $layout: vertical);
+$repeat-x-bg-x2: sprite-map("repeat-x-bg/x2/*.png", $layout: vertical);
+
+//==========================================
+// スプライトの内容を出し分けるmixin
+
+@mixin dpr-based-sprite-repeat-x($map-x1, $map-x2, $name, $device-pixel-ratio) {
+
+  // 等倍用
+  @if $device-pixel-ratio == 1 {
+
+    // スプライトの位置を取得して指定
+    $position: sprite-position($map-x1, $name);
+    background-position: $position;
+
+  }
+
+  // Retina用
+  @if $device-pixel-ratio == 2 {
+
+    // スプライトの位置を取得して指定
+    // background-sizeで本来のサイズの1/2に縮めているので
+    // X, Yもそれぞれ半分にする
+    $position: sprite-position($map-x2, $name);
+    $x: nth($position, 1) / 2;
+    $y: nth($position, 2) / 2;
+    background-position: $x $y;
+
+  }
+
+}
+
+//==========================================
+// 背景画像ベースのクラス
+
+// 等倍用
+%dpr1-repeat-x-bg-base {
+  background-image: sprite-url($repeat-x-bg-x1);
+  background-repeat: repeat-x;
+}
+// Retina用
+%dpr2-repeat-x-bg-base {
+  background-image: sprite-url($repeat-x-bg-x2);
+  background-size: image-width(sprite-path($repeat-x-bg-x2)) / 2;
+  background-repeat: repeat-x;
+}
+
+//==========================================
+// 等倍用、Retina用のセレクタを出力するmixin
+
+@mixin repeat-x-bg($name) {
+  .dpr-x1 & {
+    @extend %dpr1-repeat-x-bg-base;
+    @include dpr-based-sprite-repeat-x($repeat-x-bg-x1, $repeat-x-bg-x2, $name, 1);
+  }
+  .dpr-x2 & {
+    @extend %dpr2-repeat-x-bg-base;
+    @include dpr-based-sprite-repeat-x($repeat-x-bg-x1, $repeat-x-bg-x2, $name, 2);
+  }
+}

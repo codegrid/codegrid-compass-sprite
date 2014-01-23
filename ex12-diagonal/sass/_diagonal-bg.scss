@@ -1,0 +1,74 @@
+//==========================================
+// スプライトマップ群
+
+$diagonal-bg-x1: sprite-map("diagonal-bg/x1/*.png", $layout: diagonal);
+$diagonal-bg-x2: sprite-map("diagonal-bg/x2/*.png", $layout: diagonal);
+
+//==========================================
+// スプライトの内容を出し分けるmixin
+
+@mixin dpr-based-diagonal-sprite(
+  $map-x1, $map-x2, $name, $device-pixel-ratio,
+  $offset-x, $offset-y
+) {
+
+  // 等倍用
+  @if $device-pixel-ratio == 1 {
+
+    // スプライトの位置を取得して指定
+    $position: sprite-position($map-x1, $name, $offset-x, $offset-y);
+    background-position: $position;
+
+  }
+
+  // Retina用
+  @if $device-pixel-ratio == 2 {
+
+    // スプライトの位置を取得。
+    // 画像の大きさは本来の画像の二倍なので、offsetも2倍として計算する
+    $position: sprite-position($map-x2, $name, $offset-x*2, $offset-y*2);
+
+    // そしてbackground-sizeで本来のサイズの1/2に縮めているので
+    // X, Yもそれぞれ半分にする
+    $x: nth($position, 1) / 2;
+    $y: nth($position, 2) / 2;
+    background-position: $x $y;
+
+  }
+
+}
+
+//==========================================
+// 背景画像ベースのクラス
+
+// 非Retina
+%dpr1-diagonal-bg-base {
+  background-image: sprite-url($diagonal-bg-x1);
+  background-repeat: no-repeat;
+}
+// Retina
+%dpr2-diagonal-bg-base {
+  background-image: sprite-url($diagonal-bg-x2);
+  background-size: image-width(sprite-path($diagonal-bg-x2)) / 2;
+  background-repeat: no-repeat;
+}
+
+//==========================================
+// Retina、非Retinaのセレクタを出力するmixin
+
+@mixin diagonal-bg($name, $offset-x:0, $offset-y:0) {
+  .dpr-x1 & {
+    @extend %dpr1-diagonal-bg-base;
+    @include dpr-based-diagonal-sprite(
+      $diagonal-bg-x1, $diagonal-bg-x2, $name, 1,
+      $offset-x, $offset-y
+    );
+  }
+  .dpr-x2 & {
+    @extend %dpr2-diagonal-bg-base;
+    @include dpr-based-diagonal-sprite(
+      $diagonal-bg-x1, $diagonal-bg-x2, $name, 2,
+      $offset-x, $offset-y
+    );
+  }
+}
