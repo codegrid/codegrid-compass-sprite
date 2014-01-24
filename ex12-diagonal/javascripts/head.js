@@ -4,7 +4,7 @@
   var dpr = window.devicePixelRatio;
   if (!dpr) { return; }
   if (dpr >= 2) {
-    $html.removeClass('dpr-x1').addClass('dpr-x2');
+    $html.removeClass('dpr-1').addClass('dpr-2');
   }
 
 }());

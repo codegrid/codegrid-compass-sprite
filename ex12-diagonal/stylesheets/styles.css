@@ -1,12 +1,10 @@
-.dpr-x1 li.nav1, .dpr-x1 li.nav2, .dpr-x1 li.nav3 {
-  background-image: url('../images/diagonal-bg/x1-s064d532909.png');
-  background-repeat: no-repeat;
+.dpr-1 li.nav1, .dpr-1 li.nav2, .dpr-1 li.nav3 {
+  background: url('../images/diagonal-bg/x1-s064d532909.png') no-repeat;
 }
 
-.dpr-x2 li.nav1, .dpr-x2 li.nav2, .dpr-x2 li.nav3 {
-  background-image: url('../images/diagonal-bg/x2-sc5ee47c6f6.png');
+.dpr-2 li.nav1, .dpr-2 li.nav2, .dpr-2 li.nav3 {
+  background: url('../images/diagonal-bg/x2-sc5ee47c6f6.png') no-repeat;
   background-size: 90px;
-  background-repeat: no-repeat;
 }
 
 body {
@@ -24,21 +22,21 @@ li {
   margin: 0;
   padding: 0 0 .7em 15px;
 }
-.dpr-x1 li.nav1 {
+.dpr-1 li.nav1 {
   background-position: 0 -52px;
 }
-.dpr-x2 li.nav1 {
+.dpr-2 li.nav1 {
   background-position: 0 -52px;
 }
-.dpr-x1 li.nav2 {
+.dpr-1 li.nav2 {
   background-position: -30px -22px;
 }
-.dpr-x2 li.nav2 {
+.dpr-2 li.nav2 {
   background-position: -30px -22px;
 }
-.dpr-x1 li.nav3 {
+.dpr-1 li.nav3 {
   background-position: -60px 8px;
 }
-.dpr-x2 li.nav3 {
+.dpr-2 li.nav3 {
   background-position: -60px 8px;
 }
