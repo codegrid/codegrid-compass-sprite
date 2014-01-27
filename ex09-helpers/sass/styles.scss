@@ -1,7 +1,6 @@
 $icon: sprite-map("icon/*.png", $layout: smart);
 
 .icon-face-cool {
-  hoge: sprite-file($icon, face-cool);
   // spriteのURLを取得
   background-image: sprite-url($icon);
   // spriteの中から、face-coolのpositionを取得
